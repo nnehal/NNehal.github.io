@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Course Management</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column justify-content-between h-100vh">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-row">
+          <img src="/QCFIRST/qcfirst.png" width="110" class="m-3 align-self-start" alt="qcfirst logo">
+          <div class="flex-grow-1 text-center pr-5">
+            <h3 class="mb-4 pr-5">Course Management</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-between my-5">
+        <div class="col-md-6">
+          <div class="card bg-light">
+            <div class="card-body">
+              <div class="card-title mb-4 font-weight-bold">
+                Add
+              </div>
+              <form>
+                <div class="form-group">
+                  <label>Course name:</label> <input type="text" id="course-name" name="course" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Department</label> <select name="dep" id="department" class="form-control">
+                    <option value="physics">
+                      PHYS
+                    </option>
+                    <option value="math">
+                      MATH
+                    </option>
+                    <option value="chemistry">
+                      CHEM
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="course-num">Course number:</label> <input type="text" id="course-num" name="course" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Capacity:</label> <input type="text" id="cap" name="capacity" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="semester">Semester</label> <select name="sem" id="semester" class="form-control">
+                    <option value="spring">
+                      Spring
+                    </option>
+                    <option value="fall">
+                      Fall
+                    </option>
+                    <option value="summer">
+                      Summer
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="date">Enrollment date:</label> <input type="date" id="date" name="enrollment date" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="des">Enrollment date:</label> 
+                  <textarea id='des' class="form-control">Course description</textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-outline-success btn-rounded" type="submit">Create</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-light">
+            <div class="card-body">
+              <div class="card-title mb-4 font-weight-bold">
+                Remove
+              </div>
+              <form>
+                <div class="form-group">
+                  <label>Course name:</label> <input type="text" id="name-remove" name="course" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Department</label> <select name="dep-rem" id="department-remove" class="form-control">
+                    <option value="physics">
+                        PHYS
+                    </option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
